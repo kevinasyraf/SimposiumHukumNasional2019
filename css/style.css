@@ -1,0 +1,33 @@
+#navbar{
+    background: #28364A !important;
+    font-family: "Tokyo";
+}
+
+#navbar a{
+    color: whitesmoke;
+}
+
+#navbar .dropdown-menu a{
+    color: black;
+}
+
+#navbar a:hover{
+    color: #F3A493;
+}
+
+#navbar .navbar-nav a:hover{
+    background: #1A4C6E;
+    color: white; 
+}
+
+.background-logo{
+    margin: 0;
+    background: #D65353;
+}
+
+.logo-container{
+    margin: auto;
+    background: #D65353;
+    max-width: 500px;
+    padding: 50px 0;
+}
