@@ -1,0 +1,114 @@
+/* Prefixes */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f5e7e3;
+}
+
+html,
+body {
+  line-height: 1.4;
+  font-size: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Basics */
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Index */
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  min-height: 70px;
+}
+
+#navbar .navbar-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#navbar .navbar-items li {
+  transition: all 0.5s ease;
+}
+
+#navbar .navbar-items .navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .navbar-items .navbar-links > * {
+  margin-left: 1rem;
+  transition: all 0.5s ease;
+}
+
+#navbar .navbar-items .navbar-links > *:hover,
+#navbar .navbar-items li:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+/* Header */
+#header {
+  background: url("../asset/construction.jpg") no-repeat center center/cover
+    fixed;
+  height: 100vh;
+  position: relative;
+}
+
+#header::before {
+  content: "";
+  background: linear-gradient(0, #d65353, #28364a);
+  /* background: #d65353; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.8;
+}
+
+#header .image-wrapper {
+  width: 800px;
+  margin: auto;
+  transform: translateY(0);
+  opacity: 0;
+  animation: logo-show 4s ease forwards;
+}
+
+@keyframes logo-show {
+  55% {
+    transform: translateY(110px);
+  }
+
+  100% {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+}
+
+#header .image-wrapper img {
+  width: 100%;
+}
