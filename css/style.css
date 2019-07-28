@@ -12,13 +12,12 @@ li {
 
 a {
   text-decoration: none;
-  color: #f5e7e3;
+  color: #28364a;
 }
 
 body {
   line-height: 1.4;
   font-size: 16px;
-  position: relative;
 }
 
 /* Basics */
@@ -27,19 +26,86 @@ body {
   margin: auto;
 }
 
+/* Navbar */
+#navbar {
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  /* height: 9vh; */
+  background: transparent;
+  /* overflow: hidden; */
+}
+
+#navbar .navbar-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: padding 0.5s ease;
+}
+
+/* for javascript */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.after-sticky {
+  /* animation: after-stick 1s ease forwards; */
+  transition: padding 2s ease !important;
+  padding: 1rem 1rem !important;
+}
+
+#navbar .navbar-items li {
+  transition: all 0.5s ease;
+}
+
+#navbar .navbar-items li #logo-word {
+  font-family: "Tokyo";
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+#navbar .navbar-items .navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#navbar .navbar-items .navbar-links li {
+  margin: 0 0.5rem;
+  transition: all 0.5s ease;
+}
+
+/* #navbar .navbar-items .navbar-links li:first-child {
+  margin-left: 0;
+  transition: all 0.5s ease;
+} */
+
+#navbar .navbar-items .navbar-links > *:hover,
+#navbar .navbar-items li:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
 /* Header */
 #header {
   background: url("../asset/construction.jpg") no-repeat center center/cover
     fixed;
-  height: 91vh;
+  height: 100vh;
   width: 100%;
   position: relative;
 }
 
 #header::before {
   content: "";
-  background: linear-gradient(0, #d65353, #28364a);
-  /* background: #d65353; */
+  /* background: linear-gradient(0, #d65353, #28364a); */
+  background: #f5e7e3;
   width: 100%;
   height: 100%;
   top: 0;
@@ -71,62 +137,9 @@ body {
   width: 100%;
 }
 
-/* Navbar */
-#navbar {
-  width: 100%;
-  z-index: 999;
-  /* height: 9vh; */
-  background: #28364a;
-  overflow: hidden;
-}
-
-#navbar .navbar-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 1rem;
-  font-size: 1.3em;
-  font-weight: bold;
-  transition: padding 0.5s ease;
-}
-
-/* for javascript */
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.after-sticky {
-  /* animation: after-stick 1s ease forwards; */
-  transition: padding 2s ease !important;
-  padding: 1rem 1rem !important;
-}
-
-#navbar .navbar-items li {
-  transition: all 0.5s ease;
-}
-
-#navbar .navbar-items .navbar-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#navbar .navbar-items .navbar-links > * {
-  margin-left: 1rem;
-  transition: all 0.5s ease;
-}
-
-#navbar .navbar-items .navbar-links > *:hover,
-#navbar .navbar-items li:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease;
-}
-
 .tentang-kami {
   background: #f5e7e3;
   width: 100%;
   height: 100vh;
+  text-shadow: #28364a;
 }
