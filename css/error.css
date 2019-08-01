@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+  }
+
+.background {
+    background: #d65353;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.background h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: auto;
+    padding-top: 30vh;
+}
+
+.background i {
+    display: block;
+    text-align: center;
+    font-size: 72px;
+    padding: 15px;
+}
+
+.background a {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 15px 18px;
+    font-size: 28px;
+    /* max-width: 120px; */
+    color: #f5e7e3;
+    text-decoration: none;
+}
+
+.background a:hover {
+    font-size: 32px;
+}
+
+@media (max-height: 555px) {
+    .background h1 {
+        padding-top: 15vh;
+    }
+}
