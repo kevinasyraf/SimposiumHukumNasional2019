@@ -24,3 +24,28 @@ function showSecondNavbar() {
     secondaryNavbar.classList.remove("show");
   }
 }
+
+// if checkbox is checked
+
+let checkbox = document.getElementById("burger");
+
+let line = document.querySelector(".line");
+
+let modal = document.querySelector(".modal");
+
+function burgerTransition() {
+  if (checkbox.checked) {
+    line.classList.remove("after-modal");
+    line.classList.add("before-modal");
+  } else {
+    line.classList.remove("before-modal");
+    line.classList.add("after-modal");
+  }
+}
+
+modal.addEventListener("click", e => {
+  checkbox.checked = false;
+  burgerTransition();
+});
+
+checkbox.addEventListener("change", burgerTransition);
