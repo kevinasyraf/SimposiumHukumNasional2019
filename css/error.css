@@ -41,8 +41,15 @@
     font-size: 32px;
 }
 
-@media (max-height: 555px) {
+@media (max-height: 568px) {
     .background h1 {
         padding-top: 15vh;
+    }
+}
+
+@media (max-height: 360px) {
+    .background h1 {
+        padding-top: 5vh;
+        font-size: 36px;
     }
 }
