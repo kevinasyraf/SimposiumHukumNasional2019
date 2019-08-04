@@ -15,6 +15,10 @@ a {
   color: #28364a;
 }
 
+button {
+  border: none;
+}
+
 /* html {
   scroll-behavior: smooth;
 } */
@@ -487,10 +491,29 @@ p {
 #registration {
   padding: 2rem;
   background: #28364a;
-  color: #f5e7e3;
+  color: #fff;
 }
 
-#registration .daftar {
+
+#registration .text-fields {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  /* grid-gap: 1rem; */
+  /* margin-bottom: 1.2rem;  */
+}
+
+#registration .text-fields input {
+  padding: 1rem;
+  /* margin-top: 0rem; */
+  /* margin-bottom: 1rem; */
+}
+
+#registration .text-fields h2 {
+  margin-top: 1rem;
+}
+
+#test-form .daftar {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   justify-items: center;
